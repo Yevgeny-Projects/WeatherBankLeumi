@@ -1,0 +1,32 @@
+<div *ngIf="weatherInfoModel && weatherInfoModel.weather" class="current-container mobile-padding" style="justify-content: start;">
+    <div><span>
+        {{currentDate | date: 'dd MMM yyyy hh:mm a'}}</span>
+        <h2 style="margin-top: 0px;">
+            {{weatherInfoModel?.name}}, {{weatherInfoModel?.sys?.country}}
+        </h2>
+    </div>
+    <div><span style="font-weight: bold;">
+        Feels like {{ weatherInfoModel?.main?.feels_like | number:'1.0-0'}}°C. 
+        {{ weatherInfoModel?.weather[0]?.description | titlecase}}.</span>
+    </div>
+    <div class="horizontal-mobile">
+        <div class="nowrap horizontal">
+            <img src="{{weatherIcon}}" class="weather-icon align-bottom"
+                style="margin-left: -10px;">
+                <span class="heading">{{ weatherInfoModel?.main?.temp | number:'1.0-0'}}°C</span>
+        </div>
+        <div>
+            <ul class="weather-items text-container orange-side standard-padding">
+                <li>
+                    <span class="item-header-width">Wind:</span> {{ weatherInfoModel?.wind?.speed }}m/s {{compassDir}} 
+                </li>
+                <li><span class="item-header-width">Pressure: </span>{{ weatherInfoModel?.main?.pressure }}hPa</li>
+                <li><span class="item-header-width">Humidity:</span>{{ weatherInfoModel?.main?.humidity }}%</li>
+                <li><span class="item-header-width">Visibility:</span>{{ weatherInfoModel?.visibility/1000 | number:'1.0-0' }}km</li>
+            </ul>
+        </div>
+    </div>
+</div>
+<div *ngIf="(cityInput.length > 0) && (!weatherInfoModel || !weatherInfoModel.weather)">
+    <div><span>No information</span></div>
+</div>    

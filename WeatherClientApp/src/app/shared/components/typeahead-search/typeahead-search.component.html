@@ -1,0 +1,22 @@
+<div class="input-container">
+    <input #filterInput type="text" 
+            maxlength="20" 
+            (keyup)='searchQueryOnDataSource($event)' 
+            [placeholder]="placeholder" />
+    <span id="search-icon">    
+      <i class="fa fa-search"></i>
+    </span>
+    <span id="search-clear">
+      <i (click)="closeSearch()" class="fa fa-close"></i>
+    </span>
+    <div class="suggestions-container">
+      <ul #filterList *ngIf="resultDataList">
+        <li class="item" *ngFor="let result of resultDataList" (click)="selectedResult(result)">
+          <a>
+            <img *ngIf="resultDataList.length !== 1" [src]='result?.icon' style="float: left" width="35" height="20">
+            <div *ngIf="resultDataList.length > 0" [innerHTML]='result?.name' style="margin-left: 45px;"></div>
+           </a>  
+        </li>
+      </ul>
+    </div>
+</div>

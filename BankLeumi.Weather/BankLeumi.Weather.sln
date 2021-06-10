@@ -1,0 +1,78 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30621.155
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BankLeumi.Weather.BL", "BankLeumi.Weather.BL\BankLeumi.Weather.BL.csproj", "{2C440C29-EEBD-4AD8-A22C-10B18EF8A3B3}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BankLeumi.Weather.DAL", "BankLeumi.Weather.DAL\BankLeumi.Weather.DAL.csproj", "{97B521E2-5E90-4CBF-A219-B659F21D4488}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BankLeumi.Weather.Core", "BankLeumi.Weather.Core\BankLeumi.Weather.Core.csproj", "{67F881AD-6E6D-4557-AF78-29837A885FF4}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{1D614B03-1B74-4ACC-A5BD-E446E62738AA}"
+	ProjectSection(SolutionItems) = preProject
+		readme.txt = readme.txt
+	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BankLeumi.Weather.NHibernate", "BankLeumi.Weather.NHibernate\BankLeumi.Weather.NHibernate.csproj", "{937AC86C-D2F5-4D07-9ABC-6C15104C42AB}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BankLeumi.Weather.DM", "BankLeumi.Weather.DM\BankLeumi.Weather.DM.csproj", "{37CD2F84-9957-4079-9768-FF2FE79333C4}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BankLeumi.Weather.DI", "BankLeumi.Weather.DI\BankLeumi.Weather.DI.csproj", "{3D1D91CD-5E04-4088-8226-1DEBD6428B89}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BankLeumi.Weather.Mapping", "BankLeumi.Weather.Mapping\BankLeumi.Weather.Mapping.csproj", "{4255ED5E-0D3F-453F-B5B9-197C55C1D75F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BankLeumi.Weather.Tests", "BankLeumi.Weather.Tests\BankLeumi.Weather.Tests.csproj", "{326586C0-D6F9-40A8-BD05-3A264E3AF60D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BankLeumi.Weather.WebAPI", "BankLeumi.Weather.WebAPI\BankLeumi.Weather.WebAPI.csproj", "{477E7358-F413-40C1-BB3C-E44278180F70}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2C440C29-EEBD-4AD8-A22C-10B18EF8A3B3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2C440C29-EEBD-4AD8-A22C-10B18EF8A3B3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2C440C29-EEBD-4AD8-A22C-10B18EF8A3B3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2C440C29-EEBD-4AD8-A22C-10B18EF8A3B3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{97B521E2-5E90-4CBF-A219-B659F21D4488}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{97B521E2-5E90-4CBF-A219-B659F21D4488}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{97B521E2-5E90-4CBF-A219-B659F21D4488}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{97B521E2-5E90-4CBF-A219-B659F21D4488}.Release|Any CPU.Build.0 = Release|Any CPU
+		{67F881AD-6E6D-4557-AF78-29837A885FF4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{67F881AD-6E6D-4557-AF78-29837A885FF4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{67F881AD-6E6D-4557-AF78-29837A885FF4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{67F881AD-6E6D-4557-AF78-29837A885FF4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{937AC86C-D2F5-4D07-9ABC-6C15104C42AB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{937AC86C-D2F5-4D07-9ABC-6C15104C42AB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{937AC86C-D2F5-4D07-9ABC-6C15104C42AB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{937AC86C-D2F5-4D07-9ABC-6C15104C42AB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{37CD2F84-9957-4079-9768-FF2FE79333C4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{37CD2F84-9957-4079-9768-FF2FE79333C4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{37CD2F84-9957-4079-9768-FF2FE79333C4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{37CD2F84-9957-4079-9768-FF2FE79333C4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3D1D91CD-5E04-4088-8226-1DEBD6428B89}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3D1D91CD-5E04-4088-8226-1DEBD6428B89}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3D1D91CD-5E04-4088-8226-1DEBD6428B89}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3D1D91CD-5E04-4088-8226-1DEBD6428B89}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4255ED5E-0D3F-453F-B5B9-197C55C1D75F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4255ED5E-0D3F-453F-B5B9-197C55C1D75F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4255ED5E-0D3F-453F-B5B9-197C55C1D75F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4255ED5E-0D3F-453F-B5B9-197C55C1D75F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{326586C0-D6F9-40A8-BD05-3A264E3AF60D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{326586C0-D6F9-40A8-BD05-3A264E3AF60D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{326586C0-D6F9-40A8-BD05-3A264E3AF60D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{326586C0-D6F9-40A8-BD05-3A264E3AF60D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{477E7358-F413-40C1-BB3C-E44278180F70}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{477E7358-F413-40C1-BB3C-E44278180F70}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{477E7358-F413-40C1-BB3C-E44278180F70}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{477E7358-F413-40C1-BB3C-E44278180F70}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {4B3846D2-38D4-4D2B-893D-A9D5A4228253}
+	EndGlobalSection
+EndGlobal

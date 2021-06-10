@@ -1,0 +1,26 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Ensure.That" Version="9.2.0" />
+    <PackageReference Include="FluentNHibernate" Version="3.0.1" />
+    <PackageReference Include="Microsoft.Data.Sqlite.Core" Version="3.1.9" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.Abstractions" Version="3.1.9" />
+    <PackageReference Include="Newtonsoft.Json" Version="12.0.3" />
+    <PackageReference Include="NHibernate" Version="5.3.4" />
+    <PackageReference Include="System.Configuration.ConfigurationManager" Version="4.7.0" />
+    <PackageReference Include="System.Data.SQLite" Version="1.0.113.6" />
+    <PackageReference Include="Unity" Version="5.11.7" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\BankLeumi.Weather.Core\BankLeumi.Weather.Core.csproj" />
+    <ProjectReference Include="..\BankLeumi.Weather.DI\BankLeumi.Weather.DI.csproj" />
+    <ProjectReference Include="..\BankLeumi.Weather.DM\BankLeumi.Weather.DM.csproj" />
+    <ProjectReference Include="..\BankLeumi.Weather.Mapping\BankLeumi.Weather.Mapping.csproj" />
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,29 @@
+.ng-autocomplete {
+    width: 100%;
+    max-width: 600px;
+    display: grid;
+    margin: 0 auto;
+  }
+  
+  .autocomplete-container {
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, .2), 0 1px 1px 0 rgba(0, 0, 0, .14), 0 2px 1px -1px rgba(0, 0, 0, .12);
+    position: relative;
+    overflow: visible;
+    height: 40px;
+  }
+
+  .grid-container {
+    display: grid;
+    grid-gap: 16pt;
+  }
+
+  .grid-columns {
+    grid-template-columns: minmax(0,1fr);
+  }
+
+  .info-col {
+    background-color: #27b6ee;
+  }
+  .history-col {
+    background-color: #e3e3e3;
+  }

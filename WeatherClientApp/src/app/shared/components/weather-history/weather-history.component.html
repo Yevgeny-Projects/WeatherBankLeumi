@@ -1,0 +1,49 @@
+<!--
+<div *ngIf="historyDataList.length > 0" class="pb-2 hourly-container block mobile-padding">
+    <h3>10-minutes history</h3>
+    <ul class="day-list mb-2">
+        <li *ngFor="let result of historyDataList">
+            <div *ngIf ="result" class="day-list-values">
+                <div class="history-container mt-4 d-flex flex-nowrap" >
+                    <div>{{result.request_date | date: 'dd MMM yyyy hh:mm a'}}</div>
+                    <div class="ml-4">
+                        <img src="{{ iconBaseUrl + result?.weather_response_model?.weather[0].icon }}.png" class="weather-icon">
+                    </div>
+                    <div class="d-flex flex-nowrap ml-2"
+                    >{{ result?.weather_response_model?.main?.temp_max | number:'1.0-0'}} / 
+                    {{ result?.weather_response_model?.main?.temp_min | number:'1.0-0'}},
+                    </div>
+                    <div class="d-flex flex-nowrap  ml-2">
+                        {{ result?.weather_response_model?.weather[0]?.description | titlecase}},
+                    </div>
+                    <div class="d-flex flex-nowrap ml-2">
+                        {{ result?.weather_response_model?.name}}
+                    </div>
+                </div>
+            </div>
+        </li>
+     </ul>
+</div>-->
+<div *ngIf="historyDataList.length > 0" class="pb-2 mobile-padding">
+    <h3>10-minutes history</h3>
+    <div class="container">
+        <ng-container *ngFor="let result of historyDataList">
+            <div *ngIf="result" class="row-h align-items-center pb-2" (click)="open(result)">
+                <div class="col-4">
+                    {{result.request_date | date: 'dd MMM yyyy hh:mm a'}}
+                </div>
+                  <div class="col-2">
+                    {{ result?.weather_response_model?.main?.temp_max | number:'1.0-0'}} / 
+                    {{ result?.weather_response_model?.main?.temp_min | number:'1.0-0'}}
+                </div>
+                <div class="col-3">
+                    {{ result?.weather_response_model?.weather[0]?.description | titlecase}}
+                </div>
+                <div class="col-3">
+                    {{ result?.weather_response_model?.name}}
+                    <span data-v-3724b8e4="" class="chevron-container"><svg data-v-3724b8e4="" width="12px" height="12px" viewBox="0 0 512 512" class="icon-down"><path fill="#48484A" d="M98.9,184.7l1.8,2.1l136,156.5c4.6,5.3,11.5,8.6,19.2,8.6c7.7,0,14.6-3.4,19.2-8.6L411,187.1l2.3-2.6  c1.7-2.5,2.7-5.5,2.7-8.7c0-8.7-7.4-15.8-16.6-15.8v0H112.6v0c-9.2,0-16.6,7.1-16.6,15.8C96,179.1,97.1,182.2,98.9,184.7z"></path></svg></span>
+                </div>
+             </div>
+        </ng-container>
+    </div>
+</div>

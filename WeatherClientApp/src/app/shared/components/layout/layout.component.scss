@@ -1,0 +1,26 @@
+.header-website {
+    position: fixed;
+    height: 48pt;
+    top: 0;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+    background-color: #48484A;
+    color: #F2F2F2;
+    list-style: none;
+    padding: 8pt;
+    z-index: 1001;
+    font-size: 14px;
+}
+
+.logo {
+    display: block;
+    flex: 0 0 50%;
+    text-align: left;
+}
+
+.logo img {
+    width:95px;
+    height: 40px;
+}

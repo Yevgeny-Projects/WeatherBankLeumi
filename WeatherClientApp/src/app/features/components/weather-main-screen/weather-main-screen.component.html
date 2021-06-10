@@ -1,0 +1,24 @@
+<div class="ng-autocomplete">
+    <div class="autocomplete-container mt-2">
+        <app-typeahead-search [searchDataSource]="cities" [placeholder]="placeHolder"
+            (userSelectedResult)="selectEvent($event)" (closeSearchEvent)="onClosed($event)">
+        </app-typeahead-search>
+    </div>
+</div>    
+<div class="container mt-4">
+    <div class="row">
+        <div class="col-lg-5 info-col">
+            <app-weather-city-info 
+                [cityInput] = "cityInput"
+                [weatherInfoModel]="weatherResponseModel"
+                [iconBaseUrl] = "iconBaseUrl">
+            </app-weather-city-info>
+        </div>
+        <div class="col-lg-7 history-col">
+            <app-weather-history 
+                [historyDataList]="weatherHistoryModel"
+                [iconBaseUrl] = "iconBaseUrl">
+            </app-weather-history>
+        </div>
+    </div>
+</div> 
